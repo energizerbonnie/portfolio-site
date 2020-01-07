@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+html {
+	font-size: 16px;
+	scroll-behavior: smooth;
+}
+
+html body {
+	font-family: 'Questrial', sans-serif;
+	font-size: 1em;
+	color: #211E20;
+}
+
+ul,
+li {
+	list-style: none;
+	display: inline-block;
+}
+
+/* Navbar Styles */
+
+#mainNavbar a:hover {
+	color: #FF7530;
+}
+
+#mainNavbar .navbar-brand {
+	color: #878386;
+}
+
+/* Jumbotron */
+
+#header {
+	width: 100%;
+	overflow: hidden;
+	padding: 0;
+}
+
+.jumbotron {
+	position: relative;
+	background-color: #F9E9E0!important;
+	text-align: center;
+	min-height: 300px;
+}
+
+.jumbotron h1 {
+	margin-top: .5rem;
+}
+
+/* Work Section */
+
+#work .btn {
+	background-color: #FF8C61;
+	border: none;
+}
+
+#work h2 {
+	font-weight: bold;
+}
+
+#work .card-title {
+	font-weight: bold;
+}
+
+/* About Section */
+
+#about .btn {
+	background-color: #FF8C61;
+	border: none;
+}
+
+span {
+	font-style: italic;
+}
+
+p a {
+	color: #878386;
+}
+
+p a:hover {
+	color: #FF8C61;
+	text-decoration: none;
+}
+
+#about h3 {
+	font-weight: bold;
+}
+
+#portrait {
+	padding: 0px;
+	margin-bottom: 25px;
+}
+
+#skills h4 {
+	font-weight: bold;
+}
+
+/* Contact Section */
+
+#contact {
+	background-color: #F9E9E0;
+	line-height: 3.75em;
+}
+
+#contact h2 {
+	font-weight: bold;
+}
+
+#email {
+	color: #FF7530;
+	text-decoration: none;
+	font-size: 1.75rem;
+}
+
+#email:hover {
+	color: #FF8C61;
+}
+
+#contact ul {
+	padding: 0px;
+	margin-bottom: 0px;
+}
+
+#contact ul a {
+	color: #FF7530;
+	padding: 1em;
+	font-size: 1.085rem;
+}
+
+#footer {
+	word-spacing: .25rem;
+}
+
+/* Media Breakpoints */
+
+@media (min-width: 768px) {
+
+	#description {
+		text-align: center;
+	}
+}
+
+@media (min-width: 1200px) {
+
+	#description {
+		text-align: justify;
+	}
+}
+
+/* Animations: Hero h1 slide in */
+
+@keyframes slide-up {
+  100% {
+  transform: translateY(0);
+  }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.jumbotron {
+  overflow: hidden;
+  animation-duration: 4s;
+}
+
+#h1hero {
+  animation: 1.2s slide-up linear forwards;
+  animation-timing-function: ease;
+  transform: translateY(4rem);
+}
+#herolead {
+  animation: 2s slide-up linear forwards;
+  animation-timing-function: ease;
+  transform: translateY(6rem);
+}
